@@ -6,8 +6,8 @@
 # GitHub:  https://github.com/BeardedTinker/      #
 # Twitter: https://twitter.com/BeardedTinker      #
 #                                                 #
-#                                                 #
-#                                                 #  
+# This version is for BME280 version of board     #
+# without additional DS18B50 sensor               #  
 ###################################################
 
 #
@@ -17,8 +17,8 @@
 
 
 substitutions:
-  devicename: "plantesensor_1"
-  upper_devicename: Plantesensor 1
+  devicename: "schefflera_arboricola"
+  upper_devicename: Schefflera Arboricola
   awake_duration: 6s      # set how long to stay awake - NOT less then 10sec
   sleep_duration: 90min    # set how long to sleep in minutes
   update_interval: 5s
@@ -120,7 +120,7 @@ sensor:
       state_class: "measurement" 
     address: 0x77
     update_interval: ${update_interval}
-    setup_priority: -100
+    setup_priority: -300
 
 ## Soil humidity raw data - needed just for calibration
 #  - platform: adc
